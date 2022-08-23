@@ -13,7 +13,7 @@ public class dtoAcercade {
     @NotBlank
     private String linkgAc;
     @NotBlank
-    private String linglAc;
+    private String linklAc;
     @NotBlank
     private String imgAc;
     
@@ -22,12 +22,12 @@ public class dtoAcercade {
     public dtoAcercade() {
     }
 
-    public dtoAcercade(String tituloAc, String descripcionAc, String linkiAc, String linkgAc, String linglAc, String imgAc) {
+    public dtoAcercade(String tituloAc, String descripcionAc, String linkiAc, String linkgAc, String linklAc, String imgAc) {
         this.tituloAc = tituloAc;
         this.descripcionAc = descripcionAc;
         this.linkiAc = linkiAc;
         this.linkgAc = linkgAc;
-        this.linglAc = linglAc;
+        this.linklAc = linklAc;
         this.imgAc = imgAc;
     }
     
@@ -65,12 +65,12 @@ public class dtoAcercade {
         this.linkgAc = linkgAc;
     }
 
-    public String getLinglAc() {
-        return linglAc;
+    public String getLinklAc() {
+        return linklAc;
     }
 
-    public void setLinglAc(String linglAc) {
-        this.linglAc = linglAc;
+    public void setLinklAc(String linklAc) {
+        this.linklAc = linklAc;
     }
 
     public String getImgAc() {
@@ -80,7 +80,5 @@ public class dtoAcercade {
     public void setImgAc(String imgAc) {
         this.imgAc = imgAc;
     }
-    
-    
-    
+       
 }

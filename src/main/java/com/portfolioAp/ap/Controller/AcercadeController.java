@@ -49,7 +49,7 @@ public class AcercadeController {
         if(serviceAcercade.existsByTituloAc(dtoace.getTituloAc()))
             return new ResponseEntity(new Mensaje("Informacion existente"), HttpStatus.BAD_REQUEST);
         
-        Acercade acercade = new Acercade(dtoace.getTituloAc(), dtoace.getDescripcionAc(), dtoace.getLinkiAc(),dtoace.getLinkgAc(), dtoace.getLinglAc(), dtoace.getImgAc());
+        Acercade acercade = new Acercade(dtoace.getTituloAc(), dtoace.getDescripcionAc(), dtoace.getLinkiAc(),dtoace.getLinkgAc(), dtoace.getLinklAc(), dtoace.getImgAc());
         serviceAcercade.save(acercade);
         
         return new ResponseEntity(new Mensaje("Información creada y almacenada correctamente"), HttpStatus.OK);
@@ -72,7 +72,7 @@ public class AcercadeController {
         acercade.setDescripcionAc(dtoace.getDescripcionAc());
         acercade.setLinkiAc(dtoace.getLinkiAc());
         acercade.setLinkgAc(dtoace.getLinkgAc());
-        acercade.setLinklAc(dtoace.getLinglAc());
+        acercade.setLinklAc(dtoace.getLinklAc());
         acercade.setImgAc(dtoace.getImgAc());
         
         serviceAcercade.save(acercade);
